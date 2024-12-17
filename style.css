@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* SAYLANI LOGO IMAGE  */
+.saylani-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.saylani-logo img {
+    width: 250px;
+    height: 68px;
+}
+
+/* LOGO IMAGE END */
+
+/* NAVBAR OF FLEX INCLUDE (LOGOS,H1,BUTTON) */
+
+#parent {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+
+.logo {
+    flex: 1;
+    text-align: end;
+}
+
+.register {
+    flex: 2;
+    text-align: center;
+
+}
+
+.portalbtn {
+    flex: 1;
+}
+
+.portalbtn button.portal-btn {
+    background: initial;
+    border: 1px #0e6ab2 solid;
+    border-radius: 20px;
+    width: 144px;
+    height: 32px;
+    color: #0e6ab2;
+}
+
+.portalbtn button i {
+    margin-right: 2px;
+}
+
+/* END OF FLEX NAVBAR AND ITS RESPONSIVENESS*/
+
+/* MAKING BUTTONS */
+.para1 {
+    color: grey;
+    margin-top: 15px;
+    text-align: center;
+    font-size: small;
+}
+
+#parent-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: rgba(128, 128, 128, 0.128);
+    gap: 0.1%;
+}
+
+#parent-btn button {
+    width: 140px;
+    height: 39px;
+    border-width: 1px;
+    border-bottom: none;
+    border-color: rgba(128, 128, 128, 0.128);
+    background-color: rgba(255, 255, 255, 0.208);
+    color: #0e6ab2;
+}
+
+#parent-btn button:focus {
+    color: #90c44b;
+    background-color: white;
+}
+
+#parent-btn .btn1 .Registration {
+    background-color: white;
+}
+
+#parent-btn .btn1 .Registration:hover {
+    background-color: white;
+}
+
+/* BUTTONS END */
+
+/* SELECTORS 4 STARTING SELECTORS AND INPUTS */
+
+#parent-selector {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 22px;
+}
+
+#parent-selector label {
+    color: #0e6ab2;
+    font-size: small;
+}
+
+.select1,
+.input1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.select1 select,
+.input1 input {
+    width: 466px;
+    height: 54px;
+    padding: 10px;
+    margin-top: 6px;
+    border-color: #90c44b;
+    border-radius: 5px;
+}
+
+.select1 select:focus,
+.input1 input:focus {
+    box-shadow: rgba(25, 169, 230, 0.345) 0px 2px 4px 0px, rgba(25, 169, 230, 0.345) 0px 2px 16px 0px;
+    border-color: #0e6ab2;
+    outline: none;
+}
+
+.select2,
+.input2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.select2 select,
+.input2 input {
+    width: 466px;
+    height: 54px;
+    padding: 10px;
+    margin-top: 5px;
+    border-color: #90c44b;
+    border-radius: 5px;
+}
+
+.select2 select:focus,
+.input2 input:focus {
+    border-color: #0e6ab2;
+    box-shadow: rgba(25, 169, 230, 0.345) 0px 2px 4px 0px, rgba(25, 169, 230, 0.345) 0px 2px 16px 0px;
+    outline: none;
+}
+
+
+input {
+    border-width: 1px;
+    border-color: #90c44b;
+    border-top: 1px solid #90c44b;
+    border-left: 1px solid #90c44b;
+}
+
+/* END  4 STARTING SELECTOR  AND INPUTS ALSO*/
+
+/* MAKING 1 BIG INPUT AND 2 OUTPUTS */
+
+#parent-inp-sel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    color: #0e6ab2;
+    font-size: small;
+    gap: 18px;
+}
+
+
+#parent-inp-sel>.child-input,#parent-inp-sel .child-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#parent-inp-sel>.child-input>input,#parent-inp-sel .child-selector select {
+    width: 960px;
+    height: 53px;
+    border-radius: 5px;
+    padding: 12px;
+    border-color: #90c44b;
+}
+
+#parent-inp-sel>.child-input>input:focus,#parent-inp-sel .child-selector select:focus {
+    outline: none;
+    border: 1px solid #0e6ab2;
+    box-shadow: rgba(25, 169, 230, 0.345) 0px 2px 4px 0px, rgba(25, 169, 230, 0.345) 0px 2px 16px 0px;
+}
+
+/* DONE 1 INPUT & 2 OUTPUTS */
+
+
+
+
+
+/* END */
+
+
+#parent-box{
+    display: flex;
+    gap: 30px;
+    font-size: small;
+    margin-left: 235px;
+    margin-top: 37px;
+
+}
+
+.box{
+    display: flex;
+    width: 92px;
+    height: 100px;
+    background-color:initial;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted grey;
+    border-radius: 6px;
+    margin-left: 50px;
+}
+
+#parent-box > .box > input{
+    display: none;
+} 
+
+#parent-box > .list ol{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    font-size: smaller;
+}
+
+
+.box label{
+    cursor: pointer;
+}
+
+.pic{
+    position: absolute;
+    left: 155px;
+    font-size: small;
+    top: 1080px;
+    color: #0e6ab2;
+    margin-left: 130px;
+}
+
+#list{
+    display: flex;
+    margin-left: 160px;
+    margin-top: 20px;
+   font-size: small;
+    text-align: justify;
+    margin-left: 235px;
+}
+
+
+#list ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+/* SUBMIT BUTTON */
+
+#parent-button{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+#parent-button button{
+    width: 960px;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #0e6ab2;
+    color: white;
+    font-size: large;
+}
+
+
+#card-sec{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    gap: 8px;
+}
+
+#card-sec label{
+    position: relative;
+    top: 2px;
+right: 140px ;
+font-family: Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight: 500;
+line-height: 22.001px;
+}
+
+.input-card input{
+    width:  635px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+#card-sec button{
+    background-color: #0e6ab2;
+    color: white;
+    font-size: large;
+    height: 40px;
+    width: 635px;
+    border-radius: 5px;
+    border: 1px solid #0e6ab2;
+}
+
+
+.crd{
+    position: relative;
+    right: 200px;
+}
+
+#card-sec p{
+color: #0e6ab2;
+position: relative;
+    right: 275px;
+}
+
+
+#sec-1{
+    background-image: url(./image/Untitled\ design.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 80vw ;
+    height: 201px;
+    margin-left: 130px;
+    background-color: #0e6ab2;
+    z-index: -1;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+    #parent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        order: 3;
+        margin-top: 5px;
+    }
+
+    .register {
+        order: 2;
+    }
+
+    .portalbtn {
+        order: 1;
+        margin-bottom: 10px;
+        margin-top: -5px;
+    }
+
+    .para1 {
+        margin-top: 5px;
+    }
+
+    #parent-btn button {
+        width: 120px;
+    }
+
+    #parent-selector {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .select2,
+    .input2 {
+        margin-top: 20px;
+    }
+
+    .select1 select,
+    .input1 input {
+        width: 356px;
+        height: 54px;
+    }
+
+    .select2 select,
+    .input2 input {
+        width: 356px;
+        height: 54px;
+    }
+
+    #parent-inp-sel>.child-input>input {
+        width: 356px;
+        height: 54px;
+    }
+
+    #parent-inp-sel>.child-input>input,#parent-inp-sel .child-selector select {
+        width: 356px;
+        height: 54px;
+    }
+
+    #parent-button button{
+        width: 360px;
+        height: 54px;
+    }
+
+    .pic{
+        display: none;
+    }
+
+#parent-box{
+    display: none;
+    
+}
+
+#list ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    right: 170px;
+    text-align: justify;
+  
+}
+
+#list{
+    width: 80%;
+    height: 30vh;
+
+}
+
+#card-sec input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 54px;
+}
+
+#card-sec button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 54px;
+}
+
+#card-sec label{
+    position: relative;
+right: 30px;
+}
+
+#card-sec p{
+    position: relative;
+right: 150px;
+}
+
+
+}
+
